@@ -19,6 +19,11 @@ cur.execute('CREATE TABLE IF NOT EXISTS game_years (id serial PRIMARY KEY,'
                                  'updated_at date,'
                                  'created_at date DEFAULT CURRENT_TIMESTAMP);'
                                  )
+# initial_state : JSON
+# action : JSON
+# game_id : integer
+# year : integer
+# status : in progress / completed
 
 conn.commit()
 
