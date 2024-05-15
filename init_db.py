@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import psycopg2
 
 load_dotenv()
-url = url = os.getenv("DATABASE_URL")
+url = os.getenv("DATABASE_URL")
 conn = psycopg2.connect(url)
 
 # Open a cursor to perform database operations

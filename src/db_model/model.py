@@ -44,7 +44,6 @@ class GameYear(db.Model):  # type: ignore
     year: Mapped[int] = mapped_column(Integer, nullable=False)
     initial_state: Mapped[dict] = mapped_column(JSONB, nullable=False)
     actions: Mapped[dict] = mapped_column(JSONB, nullable=False)
-
     status: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     game: Mapped["Game"] = relationship(

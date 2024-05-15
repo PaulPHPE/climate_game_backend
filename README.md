@@ -21,3 +21,4 @@
 - Populate : game_initial_config_json
 - Create an open route : CRU(D) - Create Read Update for game and game_years
 - Create a method to manage states
+- use HTTP2
